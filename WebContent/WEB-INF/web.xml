@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<web-app>
+    <display-name>HelloWorld Application</display-name>
+    
+    <servlet>
+        <servlet-name>Check</servlet-name>
+        <servlet-class>com.myDemo.Check</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Check</servlet-name>
+        <url-pattern>/demoproject/check</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>Authorization</servlet-name>
+        <servlet-class>com.myDemo.Authorization</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Authorization</servlet-name>
+        <url-pattern>/demoproject/authorization</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.myDemo.LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/demoproject/logout</url-pattern>
+    </servlet-mapping>
+
+</web-app>     
