@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: #d0e4fe;
+}
+h1 {
+    color: orange;
+    text-align: center;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<form name="buy now form" method="post" action="http://localhost:8080/DemoProject/index.jsp">
+<div align="center">
+	<h1> {{product.Brand}}</h1>
+<span>{{product.Description}}</span>
+<h3>{{product.Price}}</h3>
+<span>{{product.Warranty}}</span>
+<h3>{{product.Model}}</h3>
+<h5>{{product.Mileage}}</h5>
+
+<span>{{product.Dual_Band}}</span>
+<h3>{{product.No_of_Networks}}</h3>
+<h2><img src={{product.Photos}}></h2>
+
+
+<input type =hidden name="product_id" value={{product.Product_id}}>
+<input data-ng-if="isProductAvailable()" type="submit" value="Buy Now" >
+<span data-ng-if="!isProductAvailable()">Product not available</span>
+</form>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<div align="center">
+<h1> {{product.Brand}}</h1>
+<span>{{product.Description}}</span>
+<h3>{{product.Price}}</h3>
+<span>{{product.Warranty}}</span>
+<h3>{{product.Model}}</h3>
+<h5>{{product.Mileage}}</h5>
+<h5>{{product.Start_Date}} {{product.End_Date}}</h5>
+<span>{{product.Dual_Band}}</span>
+<h3>{{product.No_of_Networks}}</h3>
+<h2><img src={{product.Photos}}></h2>
+<div ng-controller= "MyController">
+	</h1></div>
+<form><input type="submit"  name="btn" class="btn-style" data-ng-if="isProductAvailable()"  value="Buy Now"></form>
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: #d0e4fe;
+}
+h1 {
+    color: orange;
+    text-align: center;
+}
+.btn-style{
+	border : solid 1px #000000;
+	border-radius : 20px;
+	moz-border-radius : 20px;
+	-webkit-box-shadow : 0px 0px 2px rgba(0,0,0,1.0);
+	-moz-box-shadow : 0px 0px 2px rgba(0,0,0,1.0);
+	box-shadow : 0px 0px 2px rgba(0,0,0,1.0);
+	font-size : 20px;
+	color : #ffffff;
+	padding : 1px 17px;
+	background : #5f6166;
+	background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5f6166), color-stop(100%,#00060a));
+	background : -moz-linear-gradient(top, #5f6166 0%, #00060a 100%);
+	background : -webkit-linear-gradient(top, #5f6166 0%, #00060a 100%);
+	background : -o-linear-gradient(top, #5f6166 0%, #00060a 100%);
+	background : -ms-linear-gradient(top, #5f6166 0%, #00060a 100%);
+	background : linear-gradient(top, #5f6166 0%, #00060a 100%);
+	filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f6166', endColorstr='#00060a',GradientType=0 );
+
+}
+</script>
+</head>
+</html>
+-->

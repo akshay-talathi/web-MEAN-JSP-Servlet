@@ -1,0 +1,29 @@
+<div align="center">
+	<div class="database" ng-repeat="product in products">
+		<h1><a ui-sref="home.product({catid: catID, pid: product.type})">
+			{{product.Brand}}</a></h1>
+		<span>{{product.Description}}</span>
+		<h3>{{product.Price}}</h3>
+		
+		<h2><img src={{product.Photos}}></h2>
+		
+	   <a ng-click= "BuyNow()" data-ng-if="isProductAvailable()" href="http://localhost:8080/DemoProject/index.jsp">Buy Now </a>
+	</div>
+  </div>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: #d0effe;
+}
+
+h1 {
+    color: orange;
+    text-align: center;
+
+</style>
+</head>
+</html>

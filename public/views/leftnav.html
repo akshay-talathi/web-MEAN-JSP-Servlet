@@ -1,0 +1,7 @@
+          <a ng-href="http://localhost:3000"> Home </a>
+          <div id="navigation" ng-repeat="cat in categories">
+          	
+             <a ui-sref="home.products({catid: cat})">{{cat}}</a>
+          </div>
+
+          
